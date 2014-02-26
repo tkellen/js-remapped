@@ -3,6 +3,8 @@
 
 [![NPM](https://nodei.co/npm/remapped.png)](https://nodei.co/npm/remapped/)
 
+If you need to do something more complex than simply rearranging an object, you should use [traverse](https://github.com/substack/js-traverse).
+
 ```js
 const remapped = require('remapped');
 

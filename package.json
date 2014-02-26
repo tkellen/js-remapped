@@ -1,7 +1,7 @@
 {
   "name": "remapped",
   "description": "Translate objects using dot notated mappings.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/tkellen/node-remapped",
   "author": {
     "name": "Tyler Kellen",
@@ -37,6 +37,7 @@
     "dot notation"
   ],
   "dependencies": {
-    "getobject": "~0.1.0"
+    "getobject": "~0.1.0",
+    "traverse": "^0.6.6"
   }
 }

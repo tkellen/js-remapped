@@ -20,6 +20,7 @@ var mapping = {
   myName: 'name',
   myAge: 'age',
   dotNotatedKey: 'nested.id',
+  myArray: ['name', 'age', {objectAge: 'age'}],
   temp: {
     myNestedId: 'id'
   }
@@ -30,13 +31,14 @@ remapped(source, mapping); // {
                            //   myName: 'tyler',
                            //   myAge: 30,
                            //   dotNotatedKey: 1,
+                           //   myArray: ['tyler', 30, {objectAge: 30}],
                            //   temp: {
                            //     myNestedId: 1
                            //   }
                            // };
-
 ```
 
 ## Release History
 
+* 2014-02-26 - v0.2.0 - use js-traverse
 * 2014-02-26 - v0.1.0 - initial release

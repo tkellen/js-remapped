@@ -15,6 +15,7 @@ var mapping = {
   myName: 'name',
   myAge: 'age',
   dotNotatedKey: 'nested.id',
+  myArray: ['name', 'age', {objectAge: 'age'}],
   temp: {
     myNestedId: 'id'
   }
@@ -25,6 +26,7 @@ var expected = {
   myName: 'tyler',
   myAge: 30,
   dotNotatedKey: 1,
+  myArray: ['tyler', 30, {objectAge: 30}],
   temp: {
     myNestedId: 1
   }

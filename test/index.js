@@ -18,7 +18,13 @@ var mapping = {
   myArray: ['name', 'age', {objectAge: 'age'}],
   temp: {
     myNestedId: 'id'
-  }
+  },
+  defaultNull: 'missing.key',
+  noDefault: 'missing.key'
+};
+
+var defaults = {
+  defaultNull: null
 };
 
 var expected = {
@@ -29,13 +35,15 @@ var expected = {
   myArray: ['tyler', 30, {objectAge: 30}],
   temp: {
     myNestedId: 1
-  }
+  },
+  defaultNull: null,
+  noDefault: undefined
 };
 
 describe('remapped', function () {
 
-  it('should generate a new object from a defined mapping', function () {
-    expect(remapped(source, mapping)).to.deep.equal(expected);
+  it('should generate a new object from a defined mapping and defaults', function () {
+    expect(remapped(source, mapping, defaults)).to.deep.equal(expected);
   });
 
 });

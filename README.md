@@ -10,9 +10,9 @@ If you need to do something more complex than simply rearranging an object, you 
 ### remapped(source, mapping, defaults)
 Translate a source object to a new form with a supplied mapping and optional defaults.
 
-`source` the source data
-`mapping` a destination object whose keys are dot notated strings representing paths to values in the source data
-`defaults` a optional defaults object to fill values not found in source
+`source` the source data  
+`mapping` a destination object whose keys are dot notated strings representing paths to values in the source data  
+`defaults` a optional defaults object to fill values not found in source  
 
 ## Example
 ```js

@@ -60,7 +60,7 @@ remapped(source, mapping, defaults); // {
 
 ## Release History
 
-* 2014-02-27 - v0.3.1 - harder check on fals values
+* 2014-02-27 - v0.3.1 - harder check on falsy values
 * 2014-02-27 - v0.3.0 - allow default values
 * 2014-02-26 - v0.2.0 - use js-traverse
 * 2014-02-26 - v0.1.0 - initial release

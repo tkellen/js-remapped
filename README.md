@@ -19,11 +19,11 @@ Translate a source object to a new form with a supplied mapping and optional def
 const remapped = require('remapped');
 
 var source = {
-  id: 1,
+  id: 0,
   name: 'tyler',
   age: 30,
   nested: {
-    id: 1
+    id: 0
   }
 };
 
@@ -45,13 +45,13 @@ var defaults = {
 };
 
 remapped(source, mapping, defaults); // {
-                                     //   myId: 1,
+                                     //   myId: 0,
                                      //   myName: 'tyler',
                                      //   myAge: 30,
                                      //   dotNotatedKey: 1,
                                      //   myArray: ['tyler', 30, {objectAge: 30}],
                                      //   temp: {
-                                     //     myNestedId: 1
+                                     //     myNestedId: 0
                                      //   },
                                      //   defaultNull: null,
                                      //   noDefault: undefined
@@ -60,6 +60,7 @@ remapped(source, mapping, defaults); // {
 
 ## Release History
 
+* 2014-02-27 - v0.3.1 - harder check on fals values
 * 2014-02-27 - v0.3.0 - allow default values
 * 2014-02-26 - v0.2.0 - use js-traverse
 * 2014-02-26 - v0.1.0 - initial release

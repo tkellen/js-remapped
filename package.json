@@ -1,7 +1,7 @@
 {
   "name": "remapped",
   "description": "Translate objects using dot notated mappings.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/tkellen/node-remapped",
   "author": {
     "name": "Tyler Kellen",

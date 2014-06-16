@@ -2,7 +2,7 @@ const expect = require('chai').expect;
 const remapped = require('../');
 
 var source = {
-  id: 1,
+  id: 0,
   name: 'tyler',
   age: 30,
   nested: {
@@ -28,13 +28,13 @@ var defaults = {
 };
 
 var expected = {
-  myId: 1,
+  myId: 0,
   myName: 'tyler',
   myAge: 30,
   dotNotatedKey: 1,
   myArray: ['tyler', 30, {objectAge: 30}],
   temp: {
-    myNestedId: 1
+    myNestedId: 0
   },
   defaultNull: null,
   noDefault: undefined

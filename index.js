@@ -6,7 +6,7 @@ module.exports = function (source, mapping, defaults) {
   return traverse(mapping).map(function (item) {
     if (typeof item === 'string') {
       var value = getobject.get(source, item);
-      if (!value) {
+      if (value === undefined) {
         value = getobject.get(defaults, this.path);
       }
       this.update(value);
